@@ -29,7 +29,14 @@ await yargs(["do", ...Deno.args])
       });
     },
     async (argv: Arguments) => {
-      const content = await Deno.readTextFile(argv["config-filename"]);
+      let content: string;
+      const configFilename: string = argv["config-filename"];
+      if (configFilename.startsWith("http")) {
+        content = await (await fetch(configFilename)).text();
+      } else {
+        content = await Deno.readTextFile(configFilename);
+      }
+
       const parsedConfig = yamlParse(content) as ConfigFile;
 
       for (const [key, value] of Object.entries(parsedConfig.values)) {
