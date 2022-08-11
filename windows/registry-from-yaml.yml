@@ -1,3 +1,4 @@
+# @see https://github.com/jayharris/dotfiles-windows/blob/master/windows.ps1
 folders:
   - HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
   - HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\CabinetState
@@ -5,8 +6,6 @@ folders:
 
 
 itemProperties:
-
-
   # Sound: Disable Startup Sound
   - path: HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\BootAnimation
     name: DisableStartupSound
