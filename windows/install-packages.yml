@@ -1,0 +1,32 @@
+scoop:
+  buckets:
+    - nerd-fonts
+  packages:
+    - JetBrains-Mono
+
+winget:
+  - Microsoft.VisualStudioCode
+  - VideoLan.VLC
+
+appx:
+  remove:
+    - "Microsoft.3DBuilder"
+    - "*.AutodeskSketchBook"
+    - "Microsoft.BingFinance"
+    - "Microsoft.BingNews"
+    - "Microsoft.BingSports"
+    - "Microsoft.BingWeather"
+    - "king.com.*"
+    - Microsoft.People
+    - "*.MarchofEmpires"
+    - Microsoft.GetStarted
+    - "*.Facebook"
+    - "*.DisneyMagicKingdoms"
+    - "Microsoft.Print3D"
+    - "*.SlingTV"
+    - "Microsoft.MicrosoftSolitaireCollection"
+    - "SpotifyAB.SpotifyMusic"
+    - "Microsoft.WindowsPhone"
+    - "Microsoft.XboxApp"
+    - "Microsoft.ZuneMusic"
+    - "Microsoft.ZuneVideo"
