@@ -1,0 +1,57 @@
+folders:
+  - HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+  - HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\CabinetState
+  - HKLM:\Software\Policies\Microsoft\Windows\Windows Search
+
+
+itemProperties:
+
+
+  # Sound: Disable Startup Sound
+  - path: HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\BootAnimation
+    name: DisableStartupSound
+    value: 1
+
+  # Sound: Disable Startup Sound
+  - path: HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
+    name: DisableStartupSound
+    value: 1
+
+  # Explorer: Avoid creating Thumbs.db files on network volumes
+  - path: HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+    name: DisableThumbnailsOnNetworkFolders
+    value: 1
+
+  # Explorer: Show hidden files by default: Show Files: 1, Hide Files: 2
+  - path: HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced
+    name: Hidden
+    value: 1
+
+
+
+  # Taskbar: Enable small icons
+  - path: HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced
+    name: TaskbarSmallIcons
+    value: 0
+
+  # Taskbar: Don't show Windows Store Apps on Taskbar
+  - path: HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced
+    name: StoreAppsOnTaskbar
+    value: 0
+
+  # Taskbar: Disable Cortana
+  - path: HKLM:\Software\Policies\Microsoft\Windows\Windows Search
+    name: AllowCortana
+    value: 0
+
+
+  # Taskbar: Show colors on Taskbar, Start, and SysTray: Disabled: 0, Taskbar, Start, & SysTray: 1, Taskbar Only: 2
+  - path: HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize
+    name: ColorPrevalence
+    value: 0
+
+# Taskbar: Disable Bing Search
+# Set-ItemProperty "HKCU:\Software\Microsoft\Windows\CurrentVersion\ConnectedSearch" "ConnectedSearchUseWeb" 0 # For Windows 8.1
+  - path: HKCU:\Software\Microsoft\Windows\CurrentVersion\Search
+    name: BingSearchEnabled
+    value: 0 # For Windows 10

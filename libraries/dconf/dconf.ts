@@ -19,6 +19,9 @@ export class Dconf {
       }
       output = await p.output();
       const err = await p.stderrOutput();
+      if (err) {
+        throw err;
+      }
     } catch (error) {
       console.error(error);
     } finally {
