@@ -27,7 +27,6 @@ itemProperties:
     value: 1
 
 
-
   # Taskbar: Enable small icons
   - path: HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced
     name: TaskbarSmallIcons
@@ -49,8 +48,7 @@ itemProperties:
     name: ColorPrevalence
     value: 0
 
-# Taskbar: Disable Bing Search
-# Set-ItemProperty "HKCU:\Software\Microsoft\Windows\CurrentVersion\ConnectedSearch" "ConnectedSearchUseWeb" 0 # For Windows 8.1
+  # Taskbar: Disable Bing Search
   - path: HKCU:\Software\Microsoft\Windows\CurrentVersion\Search
     name: BingSearchEnabled
     value: 0 # For Windows 10
